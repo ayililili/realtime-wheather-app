@@ -3,21 +3,15 @@ import dayjs from "dayjs";
 
 const fetchCurrentWeather = async({ authorizationKey, locationName }) => {
     const response = await fetch(
-      `https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0003-001?Authorization=${authorizationKey}&locationName=${locationName}`
+      `https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0003-001?Authorization=${authorizationKey}&StationName=${locationName}`
     )
     const data = await response.json();
-    const locationData = data.records.location[0];
-    const weatherElements = locationData.weatherElement.reduce((neededElements, item) => {
-      if (['WDSD', 'TEMP'].includes(item.elementName)){
-        neededElements[item.elementName] = item.elementValue;
-      }
-      return neededElements;
-    }, {});
-    const {WDSD, TEMP} = weatherElements;
+    const locationData = data.records.Station[0].WeatherElement;
+    console.log(locationData);
     return {
       observationTime: new Date(dayjs(locationData.observationTime)),
-      WDSD,
-      TEMP,
+      WDSD: locationData.WindSpeed,
+      TEMP: locationData.AirTemperature,
     };
 }
   
