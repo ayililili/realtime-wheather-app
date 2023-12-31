@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/realtime-wheather-app/static/css/main.d5c15f67.css",
-    "main.js": "/realtime-wheather-app/static/js/main.029c967e.js",
+    "main.js": "/realtime-wheather-app/static/js/main.ac3a7d0c.js",
     "static/js/787.7c2e1a46.chunk.js": "/realtime-wheather-app/static/js/787.7c2e1a46.chunk.js",
     "static/media/day-snowing.svg": "/realtime-wheather-app/static/media/day-snowing.ba1cbc7669611ee425e874e171d02e70.svg",
     "static/media/night-snowing.svg": "/realtime-wheather-app/static/media/night-snowing.f00de84c0d9bed3a871ecc6fdd79f1ca.svg",
@@ -24,11 +24,11 @@
     "static/media/loading.svg": "/realtime-wheather-app/static/media/loading.f8d56fd58925a1aaab4f80f1d8865c03.svg",
     "static/media/night-clear.svg": "/realtime-wheather-app/static/media/night-clear.94eb7d671bc6d4dec6aa0b47038954df.svg",
     "main.d5c15f67.css.map": "/realtime-wheather-app/static/css/main.d5c15f67.css.map",
-    "main.029c967e.js.map": "/realtime-wheather-app/static/js/main.029c967e.js.map",
+    "main.ac3a7d0c.js.map": "/realtime-wheather-app/static/js/main.ac3a7d0c.js.map",
     "787.7c2e1a46.chunk.js.map": "/realtime-wheather-app/static/js/787.7c2e1a46.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d5c15f67.css",
-    "static/js/main.029c967e.js"
+    "static/js/main.ac3a7d0c.js"
   ]
 }
