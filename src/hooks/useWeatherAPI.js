@@ -3,7 +3,7 @@ import dayjs from "dayjs";
 
 const fetchCurrentWeather = async({ authorizationKey, locationName }) => {
     const response = await fetch(
-      `https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0003-001?Authorization=${authorizationKey}&StationName=${locationName}`
+      `https://opendata.cwa.gov.tw/api/v1/rest/datastore/O-A0003-001?Authorization=${authorizationKey}&StationName=${locationName}`
     )
     const data = await response.json();
     const locationData = data.records.Station[0].WeatherElement;
@@ -17,7 +17,7 @@ const fetchCurrentWeather = async({ authorizationKey, locationName }) => {
   
 const fetchWeatherForecast = async({ authorizationKey, cityName }) => {
     const response = await fetch(
-      `https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=${authorizationKey}&locationName=${cityName}`
+      `https://opendata.cwa.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=${authorizationKey}&locationName=${cityName}`
     )
     const data = await response.json();
     const locationData = data.records.location[0];
